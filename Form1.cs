@@ -784,7 +784,15 @@ namespace Onitool
 
                         string arquivo = Path.GetFileName(file);
 
-                        if (arquivo == "E_TITLE.LDT")
+                        if (arquivo == "TITLE.LDT")
+                        {
+                            enderecoarquivo = 0x24;
+                        }
+                        else if (arquivo == "title.ldt")
+                        {
+                            enderecoarquivo = 0x24;
+                        }
+                        else if (arquivo == "E_TITLE.LDT")
                         {
                             enderecoarquivo = 0x24;
                         }
@@ -951,11 +959,19 @@ namespace Onitool
 
                     string numeroarquivo;
 
-                    if (arquivo == "E_TITLE.LDT")
+                     if (arquivo == "E_TITLE.LDT")
                     {
                         numeroarquivo = "3";
                     }
                     else if (arquivo == "e_title.ldt")
+                    {
+                        numeroarquivo = "3";
+                    }
+                    else if (arquivo == "TITLE.LDT")
+                    {
+                        numeroarquivo = "3";
+                    }
+                    else if (arquivo == "title.ldt")
                     {
                         numeroarquivo = "3";
                     }
