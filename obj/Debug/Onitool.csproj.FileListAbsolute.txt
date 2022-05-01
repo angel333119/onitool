@@ -1,0 +1,11 @@
+D:\333\source\repos\Onitool\bin\Debug\Onitool.exe.config
+D:\333\source\repos\Onitool\bin\Debug\Onitool.exe
+D:\333\source\repos\Onitool\bin\Debug\Onitool.pdb
+D:\333\source\repos\Onitool\obj\Debug\Onitool.csproj.AssemblyReference.cache
+D:\333\source\repos\Onitool\obj\Debug\Onitool.csproj.SuggestedBindingRedirects.cache
+D:\333\source\repos\Onitool\obj\Debug\Onitool.Form1.resources
+D:\333\source\repos\Onitool\obj\Debug\Onitool.Properties.Resources.resources
+D:\333\source\repos\Onitool\obj\Debug\Onitool.csproj.GenerateResource.cache
+D:\333\source\repos\Onitool\obj\Debug\Onitool.csproj.CoreCompileInputs.cache
+D:\333\source\repos\Onitool\obj\Debug\Onitool.exe
+D:\333\source\repos\Onitool\obj\Debug\Onitool.pdb
