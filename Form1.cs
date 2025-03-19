@@ -19,6 +19,8 @@ namespace Onitool
             InitializeComponent();
         }
 
+        #region Onimusha 1 Extrator RDT
+
         private void button1_Click(object sender, EventArgs e)
         {
             //extrator
@@ -33,7 +35,7 @@ namespace Onitool
                 {
                     //Verifica se é algum dos arquivos que não tem texto e se for manda a mensagem na tela e para o programa
                     string arquivo = Path.GetFileName(file);
-                    var lista = new List<string>() { "room001.rdt","room004.rdt","room006.rdt","room012.rdt","room100.rdt","room102.rdt","room103.rdt","room104.rdt","room105.rdt","room106.rdt","room107.rdt","room109.rdt","room111.rdt","room112.rdt","room113.rdt","room114.rdt","room115.rdt","room119.rdt","room120.rdt","room122.rdt","room123.rdt","room124.rdt","room200.rdt","room202.rdt","room203.rdt","room204.rdt","room205.rdt","room206.rdt","room208.rdt","room209.rdt","room210.rdt","room211.rdt","room212.rdt","room213.rdt","room215.rdt","room216.rdt","room217.rdt","room218.rdt","room219.rdt","room220.rdt","room221.rdt","room223.rdt","room224.rdt","room225.rdt","room227.rdt","room228.rdt","room229.rdt","room231.rdt","room232.rdt","room233.rdt","room234.rdt","room237.rdt","room240.rdt","room241.rdt","room242.rdt","room300.rdt","room301.rdt","room302.rdt","room303.rdt","room304.rdt","room305.rdt","room306.rdt","room307.rdt","room309.rdt","room310.rdt","room403.rdt","room405.rdt","room500.rdt","room502.rdt","room504.rdt","room506.rdt","room509.rdt","room510.rdt","room511.rdt","room512.rdt","room513.rdt","room514.rdt","room515.rdt","room523.rdt","room530.rdt","room531.rdt","room532.rdt"};
+                    var lista = new List<string>() { "room001.rdt","room004.rdt","room012.rdt","room100.rdt","room102.rdt","room103.rdt","room104.rdt","room105.rdt","room106.rdt","room107.rdt","room109.rdt","room111.rdt","room112.rdt","room113.rdt","room115.rdt","room119.rdt","room120.rdt","room122.rdt","room123.rdt","room124.rdt","room200.rdt","room202.rdt","room203.rdt","room204.rdt","room205.rdt","room206.rdt","room208.rdt","room209.rdt","room210.rdt","room211.rdt","room212.rdt","room213.rdt","room215.rdt","room216.rdt","room217.rdt","room218.rdt","room219.rdt","room220.rdt","room221.rdt","room223.rdt","room224.rdt","room225.rdt","room227.rdt","room228.rdt","room229.rdt","room231.rdt","room232.rdt","room233.rdt","room234.rdt","room237.rdt","room240.rdt","room241.rdt","room242.rdt","room300.rdt","room301.rdt","room302.rdt","room303.rdt","room304.rdt","room305.rdt","room306.rdt","room307.rdt","room309.rdt","room310.rdt","room403.rdt","room405.rdt","room500.rdt","room502.rdt","room504.rdt","room506.rdt","room509.rdt","room510.rdt","room511.rdt","room512.rdt","room513.rdt","room514.rdt","room515.rdt","room523.rdt","room530.rdt","room531.rdt","room532.rdt"};
                     if (lista.Contains(arquivo))
                     {
                         MessageBox.Show("O arquivo " + arquivo + " não é suportado", "AVISO!");
@@ -172,6 +174,10 @@ namespace Onitool
                 MessageBox.Show("Texto extraido com sucesso!", "AVISO!");
             }
         }
+
+        #endregion
+
+        #region Onimusha 1 Inserir RDT
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -413,12 +419,16 @@ namespace Onitool
             }
         }
 
+        #endregion
+
+        #region Onimusha 1 Extrator SLUS
+
         private void button3_Click(object sender, EventArgs e)
         {
             //Extração texto SLUS
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Arquivo Onimusha PS2|SLUS_200.18|Todos os arquivos (*.*)|*.*";
-            openFileDialog1.Title = "Escolha um arquivo LDT do jogo Onimusha de PS2...";
+            openFileDialog1.Title = "Escolha um arquivo SLUS do jogo Onimusha de PS2...";
             openFileDialog1.Multiselect = false;
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -612,12 +622,16 @@ namespace Onitool
             }
         }
 
+        #endregion
+
+        #region Onimusha 1 Inserir SLUS
+
         private void button4_Click(object sender, EventArgs e)
         {
             //Inserção texto SLUS
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Arquivo Onimusha PS2|SLUS_200.18|Todos os arquivos (*.*)|*.*";
-            openFileDialog1.Title = "Escolha um arquivo LDT do jogo Onimusha de PS2...";
+            openFileDialog1.Title = "Escolha um arquivo SLUS do jogo Onimusha de PS2...";
             openFileDialog1.Multiselect = false;
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -763,12 +777,16 @@ namespace Onitool
             }
         }
 
+        #endregion
+
+        #region Onimusha 1 Extrator LTD
+
         private void button5_Click(object sender, EventArgs e)
         {
             //extrator
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
             openFileDialog1.Filter = "Arquivo Onimusha PS2|*.LDT|Todos os arquivos (*.*)|*.*";
-            openFileDialog1.Title = "Escolha um arquivo LTD do jogo Onimusha de PS2...";
+            openFileDialog1.Title = "Escolha um arquivo LDT do jogo Onimusha de PS2...";
             openFileDialog1.Multiselect = true;
 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -943,6 +961,9 @@ namespace Onitool
             }
         }
 
+        #endregion
+
+        #region Onimusha 1 Inserir LTD
         private void button6_Click(object sender, EventArgs e)
         {
             //inserçor
@@ -959,7 +980,7 @@ namespace Onitool
 
                     string numeroarquivo;
 
-                     if (arquivo == "E_TITLE.LDT")
+                    if (arquivo == "E_TITLE.LDT")
                     {
                         numeroarquivo = "3";
                     }
@@ -985,7 +1006,7 @@ namespace Onitool
                     }
                     else
                     {
-                        MessageBox.Show("Arquivo não suportado!", "AVISO!");
+                        MessageBox.Show("Arquivo " + arquivo + "não suportado!", "AVISO!");
                         return;
                     }
 
@@ -1218,5 +1239,40 @@ namespace Onitool
                 MessageBox.Show("Texto inserido e arquivo(s) remontado(s)!", "AVISO!");
             }
         }
+
+        #endregion
+
+        #region Onimusha 3 Extrator
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            //extrator
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.Filter = "Arquivo Onimusha 3 PS2|*.DAT|Todos os arquivos (*.*)|*.*";
+            openFileDialog1.Title = "Escolha um arquivo DAT do jogo Onimusha 3 de PS2...";
+            openFileDialog1.Multiselect = true;
+
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                foreach (String file in openFileDialog1.FileNames)
+                {
+                    using (FileStream stream = File.Open(file, FileMode.Open))
+                    {
+                        BinaryReader br = new BinaryReader(stream);
+                        BinaryWriter bw = new BinaryWriter(stream);
+
+                        int offsetinicial = br.ReadInt16();
+
+                        br.BaseStream.Seek(offsetinicial, SeekOrigin.Begin);
+
+                        
+
+
+                    }
+                }
+            }
+        }
+
+        #endregion
     }
 }
